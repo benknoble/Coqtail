@@ -313,7 +313,6 @@ class Coqtop:
         regular command.
         """
         assert self.xml is not None
-        # Make sure 'cmd' is a string format that supports unicode
 
         if self.xml.is_option(cmd):
             return self.do_option(cmd, in_script, encoding, timeout)
